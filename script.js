@@ -11,7 +11,6 @@ async function checkStatus() {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
-    // Use correct keys: listed, type, state, ndnc, sdnc
     const dncNational = data.ndnc === "Yes" ? "Yes" : "No";
     const dncState = data.sdnc === "Yes" ? "Yes" : "No";
 
