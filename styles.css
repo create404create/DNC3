@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #f9f9f9, #dbefff);
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
   margin: 0;
   padding: 40px;
   display: flex;
@@ -21,7 +21,7 @@ body {
 
 h2 {
   margin-bottom: 20px;
-  color: #1a237e;
+  color: #333;
 }
 
 input {
@@ -34,7 +34,7 @@ input {
 }
 
 button {
-  background-color: #2e7d32;
+  background-color: #ff6f00;
   color: white;
   padding: 12px;
   width: 100%;
@@ -45,7 +45,7 @@ button {
 }
 
 button:hover {
-  background-color: #1b5e20;
+  background-color: #e65100;
 }
 
 .result {
@@ -55,7 +55,6 @@ button:hover {
   color: #333;
 }
 
-/* 👇 Footer / Credit Section */
 footer.credit {
   margin-top: 40px;
   font-size: 14px;
@@ -65,7 +64,7 @@ footer.credit {
 
 .author {
   font-weight: bold;
-  color: #ff5722;
+  color: #ff3d00;
   font-size: 16px;
   text-transform: uppercase;
 }
