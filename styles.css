@@ -67,4 +67,10 @@ footer.credit {
   color: #ff3d00;
   font-size: 16px;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.author:hover {
+  text-decoration: underline;
+  color: #d84315;
 }
