@@ -5,18 +5,17 @@ async function checkStatus() {
     return;
   }
 
-  const apiUrl = `https://api.uspeoplesearch.net/tcpa/v1?x=${phone}`;
+  const apiUrl = `https://tcpa.api.uspeoplesearch.net/tcpa/v1?x=${phone}`;
 
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
-    const resultDiv = document.getElementById("result");
-
+    // Use correct keys: listed, type, state, ndnc, sdnc
     const dncNational = data.ndnc === "Yes" ? "Yes" : "No";
     const dncState = data.sdnc === "Yes" ? "Yes" : "No";
 
-    resultDiv.innerHTML = `
+    document.getElementById("result").innerHTML = `
       <p><strong>Status:</strong> ${data.status}</p>
       <p><strong>Phone:</strong> ${data.phone}</p>
       <p><strong>Blacklist:</strong> ${data.listed}</p>
